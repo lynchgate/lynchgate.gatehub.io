@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap: style your page like twitter -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- theme files: used to style over default bootstrap -->
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme4.css"> -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css: used to apply quick css animations -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!--our own custom css overrides-->
+    <link rel="stylesheet" href="custom.css">
+
+    <!--use this style for testing and development purposes only 
+    <style type="text/css">
+        .container {
+            <!border: 2px dotted green;-->
+    } .row { border: 1px dotted red; } .row [class*=' col-'] { border: 2px dotted purple; }
+    </style>-->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- hamburger button. do not touch! -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+                <a class="navbar-brand" href="#">
+                    <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                    <i class="fa fa-telegram"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- THIS UL HANDLES OUR LINKS -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://facebook.com">facebook</a></li>
+                    <li><a href="http://facebook.com">facebook2</a></li>
+                    <!-- to make more links, make some <li> in here -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- container for page -->
+    <div class="container">
+
+        <!-- row1:jumbotron -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="jumbotron my jumbotron-homepage" style="background-image:url('http://www.everythingaction.com/wp-content/uploads/2011/07/transformers_dark_of_the_moon_ver7_xlg.jpg'); background-size:contain; background-position:center">
+                    <div class="wow hinge">
+                        <h1>Latest Preview!!!
+                            <h1>
+                    </div>
+                    <p><a class="btn btn-primary btn-lg" href="" role="button">Purchase Ticket</a></p>
+                </div>
+
+            </div>
+        </div>
+        <!-- end of row -->
+
+
+        <!-- row 2:thumbnails -->
+
+        <div class="row">
+
+            <!-- col1 -->
+            <div class="col-xs-4">
+                <div class="thumbnail">
+                    <img src="http://supereroi-news.com/wp-content/uploads/2016/05/Captain-America-thanos.jpg" alt="photo">
+                    <div class="caption">
+                        <h3>Movie 1</h3>
+                        <p><a href="#" class="btn btn-primary" role="button">Play</a> </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of col1 -->
+
+            <!-- col2 -->
+            <div class="col-xs-4">
+                <div class="thumbnail">
+                    <img src="http://www.hdmoviesfullwatch.net/wp-content/uploads/2015/12/Fantastic-Four-2015.jpeg" alt="image2">
+                    <div class="caption">
+                        <h3>Movie 2</h3>
+                        <p><a href="#" class="btn btn-primary" role="button">Play</a> </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end of col2 -->
+
+            <!-- col3 -->
+            <div class="col-xs-4">
+                <div class="thumbnail">
+                    <img src="https://4.bp.blogspot.com/-4Uj-dbqnKTs/U6VxMnhz5lI/AAAAAAAA_OY/9WeYE4S8GiQ/s0/Guardians+of+the+Galaxy-HD.jpg" alt="image1">
+                    <div class="caption">
+                        <h3>Movie 3</h3>
+                        <p><a href="#" class="btn btn-primary" role="button">Play</a> </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of col3 -->
+        </div>
+        <!-- end of row2 -->
+
+
+        <!-- row3:video -->
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p3ehxYt6TX8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of row 3 -->
+
+        <!-- row4:forms -->
+        <div class="row">
+
+            <!-- col1 -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form action=" http://coderinyou-1332.appspot.com/submit " method="post">
+                            <div>
+                                <H3> SIGN UP NOW </H3>
+                            </div>
+                            <div class="form-group">
+                                <label for="name-id ">Name</label>
+                                <input type="TEXT" name="USERNAME " id="name-id" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email-id ">Email</label>
+                                <input type="EMAIL" id="email-id" class="form-control ">
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                    <input type ="radio" name="gender" value ="male">Male
+                                </label>
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                    <input type ="radio" name="gender" value ="female">Female
+                                </label>
+                            </div>
+
+                            <div class="radio ">
+                                <label>
+                                    <input type ="radio" name="newsletter" value ="weekly" checked= "checked ">
+                                    Send me weekly newsletters!
+                                </label>
+                            </div>
+
+                            <div class="radio ">
+                                <label>
+                                    <input type ="radio" name="newsletter" value ="weekly" checked= "checked ">
+                                    Don't send me weekly newsletters!!!
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="Submit" class="btn btn-primary">
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end of panel-->
+            </div>
+            <!--end of col1-->
+
+<ul class="fa-ul">
+ 	<h1 class="text-primary">Contact Us</h1>
+     <li>
+	  	<i class="fa-li fa fa-phone"></i>	  
+	  	<a href="url" target="_blank"> 64566667 </a>
+  	</li>
+
+ 	<li>
+	  	<i class="fa-li fa fa-envelope"></i>
+	  	<a href="url" target="_blank"> movie@movie.com </a>
+		<a href="tel: 12345">phone</a>
+  	</li>
+
+ 	<li>
+	 	<i class="fa-li fa fa-home"></i>
+	 	<a href="url" target="_blank">  https://www.google.com.sg</a>
+	 	</li>
+</ul>
+
+            
+            <!--end of col2-->
+
+        </div>
+        <!-- end of row 4-->
+
+        <!-- row5:table -->
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+            <h1 class="text-primary">Opening Hours</h1>
+            <table class="table">
+
+                <tr>
+                    <th>Day </th>
+                    <th>Hours </th>
+                </tr>
+
+                <tr>
+                    <td>Monday to Thursday </td>
+                    <td>9am to 5pm </td>
+                </tr>
+
+                <tr>
+                    <td>Friday to Saturday </td>
+                    <td>11am to 3pm </td>
+                </tr>
+
+                <tr>
+                    <td>Sunday </td>
+                    <td>Close </td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+
+    
+
+    <!-- end of row 5 -->
+
+
+    <!-- row6:map -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7955403422934!2d103.7846008140337!3d1.2973628621049917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a502126da53%3A0x51f636939b8c527f!2s73+Ayer+Rajah+Crescent%2C+Singapore+139952!5e0!3m2!1sen!2ssg!4v1494997203765"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <!-- end of row 6 -->
+
+
+
+
+
+    </div>
+    <!-- end of container for page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery: used by bootstrap.js -->
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js "></script>
+
+    <!-- bootstrap js: used to run fancy components like carousel -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa "
+        crossorigin="anonymous "></script>
+
+    <!-- wow.js: used to make animate.css run on view -->
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
